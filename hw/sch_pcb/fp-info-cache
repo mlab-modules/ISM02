@@ -1,8 +1,8 @@
 26464291320491
 MYLIB
 1515SQ-68N
-Capacitor SMD 2816 (7142 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size from: https://www.vishay.com/docs/30100/wsl.pdf), generated with kicad-footprint-generator
-inductor handsolder
+Capacitor{space}SMD{space}2816{space}(7142{space}Metric),{space}square{space}(rectangular){space}end{space}terminal,{space}IPC_7351{space}nominal{space}with{space}elongated{space}pad{space}for{space}handsoldering.{space}(Body{space}size{space}from:{space}https://www.vishay.com/docs/30100/wsl.pdf),{space}generated{space}with{space}kicad-footprint-generator
+inductor{space}handsolder
 0
 2
 2
@@ -22,8 +22,8 @@ BMI-S-204-F
 1
 MYLIB
 ESP-12E
-Wi-Fi Module, http://wiki.ai-thinker.com/_media/esp8266/docs/aithinker_esp_12f_datasheet_en.pdf
-Wi-Fi Module
+Wi-Fi{space}Module,{space}http://wiki.ai-thinker.com/_media/esp8266/docs/aithinker_esp_12f_datasheet_en.pdf
+Wi-Fi{space}Module
 0
 16
 16
@@ -36,15 +36,15 @@ HighVoltage
 0
 MYLIB
 HOPERF_RFM95W_SMD
-Low Power Long Range Transceiver Module SMD-16 (https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf)
-LoRa Low Power Long Range Transceiver Module
+Low{space}Power{space}Long{space}Range{space}Transceiver{space}Module{space}SMD-16{space}(https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf)
+LoRa{space}Low{space}Power{space}Long{space}Range{space}Transceiver{space}Module
 0
 16
 16
 MYLIB
 LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm
 https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf
-LED RGB NeoPixel
+LED{space}RGB{space}NeoPixel
 0
 4
 4
@@ -64,8 +64,8 @@ LoRa-Logo-Small
 0
 MYLIB
 NE555DR
-D (R-PDSO-G8)
-Integrated Circuit
+D{space}(R-PDSO-G8)
+Integrated{space}Circuit
 0
 8
 8
@@ -78,8 +78,8 @@ openhw
 0
 MYLIB
 Raspberry_Pi_Zero_Socketed_THT_FaceDown_MountingHoles
-Raspberry Pi Zero using through hole straight pin socket, 2x20, 2.54mm pitch, https://www.raspberrypi.org/documentation/hardware/raspberrypi/mechanical/rpi_MECH_Zero_1p2.pdf
-raspberry pi zero through hole
+Raspberry{space}Pi{space}Zero{space}using{space}through{space}hole{space}straight{space}pin{space}socket,{space}2x20,{space}2.54mm{space}pitch,{space}https://www.raspberrypi.org/documentation/hardware/raspberrypi/mechanical/rpi_MECH_Zero_1p2.pdf
+raspberry{space}pi{space}zero{space}through{space}hole
 0
 40
 40
@@ -93,27 +93,27 @@ RiskeLogo
 MYLIB
 SMD-PushButton-6x3.6mm
 https://www.mouser.com/ds/2/60/RS-282G05A-SM_RT-1159762.pdf
-SPST button tactile switch
+SPST{space}button{space}tactile{space}switch
 0
 2
 2
 MYLIB
 USB_A-Male
-USB A connector
-USB USB_A
+USB{space}A{space}connector
+USB{space}USB_A
 0
 6
 5
 MYLIB
 Wurth-WE-CAIR-AirCoil-4,83x3,81
-Neosid, Air-Coil, SML, 3turn, HDM0331A,
-Neosid Air-Coil SML 3turn HDM0331A
+Neosid,{space}Air-Coil,{space}SML,{space}3turn,{space}HDM0331A,
+Neosid{space}Air-Coil{space}SML{space}3turn{space}HDM0331A
 0
 2
 2
 MYLIB
 ZM1080
-Socket with D-SUB Sockets
+Socket{space}with{space}D-SUB{space}Sockets
 
 0
 13
