@@ -21,6 +21,14 @@
 
 
 <!--- Description --->
+RF Transceiver module with [SX1262](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1262). The SX1262 has several advantages to widely SX127x used alternative
+
+  * More power-efficient
+  * More features
+  * Smaller footprint
+  * Less external components
+  * Can use them for the satellite service
+
 <!--- EDescription --->
 <!--- Content --->
 <!--- EContent --->
