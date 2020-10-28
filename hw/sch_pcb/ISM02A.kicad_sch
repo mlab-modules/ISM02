@@ -11,6 +11,7 @@
     (comment 2 "ISM RF module with LoRa network capability")
     (comment 3 "info@mlab.cz")
     (comment 4 "GPL 3.0")
+    (comment 6 "jacho,cernohorsky")
   )
 
   (lib_symbols
