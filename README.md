@@ -1,26 +1,36 @@
 <!--- PrjInfo ---> <!--- Please remove this line after manually editing --->
 <!--- 00a56be08b96043df9e37d6aff7b6990 --->
-<!--- Created:2019-10-10 19:35:25.196922: ---> 
-<!--- Author:: ---> 
-<!--- AuthorEmail:: ---> 
-<!--- Tags:: ---> 
-<!--- Ust:: ---> 
+<!--- Created:2019-10-10 19:35:25.196922: --->
+<!--- Author:: --->
+<!--- AuthorEmail:: --->
+<!--- Tags:: --->
+<!--- Ust:: --->
 <!--- Label --->
-<!--- ELabel ---> 
+<!--- ELabel --->
 <!--- Name:ISM02A: --->
 # ISM02A
 <!--- LongName --->
-## 
-<!--- ELongName ---> 
+##
+<!--- ELongName --->
 
 <!--- Lead --->
 
-<!--- ELead ---> 
+<!--- ELead --->
 
-![ISM02A](doc/img/ISM02A_QRcode.png) 
+![ISM02A Top](doc/img/ISM02A_top.png)
+
+![ISM02A Bottom](doc/img/ISM02A_bottom.png) 
 
 
 <!--- Description --->
+RF Transceiver module with [SX1262](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1262). The SX1262 has several advantages to widely SX127x used alternative
+
+  * More power-efficient
+  * More features
+  * Smaller footprint
+  * Less external components
+  * Can use them for the satellite service
+
 <!--- EDescription --->
 <!--- Content --->
 <!--- EContent --->
