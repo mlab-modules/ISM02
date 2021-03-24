@@ -1192,6 +1192,7 @@
     )
   )
 
+
   (junction (at 43.18 93.98) (diameter 1.016) (color 0 0 0 0))
   (junction (at 48.26 83.82) (diameter 1.016) (color 0 0 0 0))
   (junction (at 48.26 91.44) (diameter 1.016) (color 0 0 0 0))
@@ -1689,7 +1690,7 @@
   )
   (wire (pts (xy 205.74 121.92) (xy 210.82 121.92))
     (stroke (width 0) (type solid) (color 0 0 0 0))
-    (uuid f026fbba-4c77-48a3-9d53-10032409bb63)
+    (uuid f38982b6-1e6c-48f4-8aad-049649e69d59)
   )
   (wire (pts (xy 205.74 127) (xy 210.82 127))
     (stroke (width 0) (type solid) (color 0 0 0 0))
@@ -2082,7 +2083,7 @@
   (symbol (lib_id "power:+3.3V") (at 207.01 111.76 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid f27cfdde-84b1-4904-bddc-8bf971fcd1ef)
-    (property "Reference" "#PWR?" (id 0) (at 207.01 115.57 0)
+    (property "Reference" "#PWR04" (id 0) (at 207.01 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (id 1) (at 207.391 107.3658 0))
@@ -2571,7 +2572,7 @@
   (symbol (lib_id "power:GND") (at 193.04 138.43 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 9eb5d852-8ece-4b0a-bdc4-48fcdb78ecfe)
-    (property "Reference" "#PWR?" (id 0) (at 193.04 144.78 0)
+    (property "Reference" "#PWR01" (id 0) (at 193.04 144.78 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (property "Value" "GND" (id 1) (at 193.04 142.24 0)
@@ -2589,7 +2590,7 @@
   (symbol (lib_id "power:GND") (at 210.82 154.94 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid af4624f3-4117-4d8a-94d5-cdea0d50f4be)
-    (property "Reference" "#PWR?" (id 0) (at 210.82 161.29 0)
+    (property "Reference" "#PWR05" (id 0) (at 210.82 161.29 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (property "Value" "GND" (id 1) (at 210.82 158.75 0)
@@ -2685,13 +2686,13 @@
     (property "Value" "10k" (id 1) (at 67.31 83.82 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Mlab_R:SMD-0805" (id 2) (at 65.532 82.55 90)
+    (property "Footprint" "Mlab_R:SMD-0603" (id 2) (at 65.532 82.55 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 67.31 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "UST_ID" "5c70984612875079b91f899f" (id 4) (at -24.13 166.37 0)
+    (property "UST_ID" "5c70984512875079b91f8962" (id 4) (at -24.13 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 9ab8fdfe-f4c3-4cce-aa44-8b6247386f34))
@@ -2701,12 +2702,15 @@
   (symbol (lib_id "Device:R") (at 220.98 144.78 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid fd608dde-7b8a-4217-a530-5ef4e2503818)
-    (property "Reference" "R?" (id 0) (at 220.98 139.5538 90))
+    (property "Reference" "R2" (id 0) (at 220.98 139.5538 90))
     (property "Value" "100R" (id 1) (at 220.98 141.853 90))
-    (property "Footprint" "" (id 2) (at 220.98 146.558 90)
+    (property "Footprint" "Mlab_R:SMD-0603" (id 2) (at 220.98 146.558 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 220.98 144.78 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "UST_ID" "5c70984512875079b91f8956" (id 4) (at 220.98 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 735ba10b-1a65-4741-856a-0bab16d51e8e))
@@ -3160,7 +3164,7 @@
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" (id 2) (at 97.4852 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (id 3) (at 96.52 73.66 0)
+    (property "Datasheet" "" (id 3) (at 96.52 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "UST_ID" "5c70984812875079b91f8bf2" (id 4) (at -24.13 148.59 0)
@@ -3399,16 +3403,19 @@
   (symbol (lib_id "Device:C") (at 210.82 149.86 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid b327dba9-1654-4985-bb21-01143437b9a3)
-    (property "Reference" "C?" (id 0) (at 213.7411 148.7106 0)
+    (property "Reference" "C18" (id 0) (at 213.7411 148.7106 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1nF" (id 1) (at 213.741 151.009 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 211.7852 153.67 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" (id 2) (at 211.7852 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 210.82 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "UST_ID" "5c70984812875079b91f8bec" (id 4) (at 210.82 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 04a66ca2-ac71-446d-bed0-42bb19a1fa90))
@@ -3582,12 +3589,15 @@
   (symbol (lib_id "MLAB_IO:PE4259") (at 193.04 124.46 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid d5b16bba-6de8-45db-b493-dfea34cb144c)
-    (property "Reference" "U?" (id 0) (at 193.04 110.0898 0))
+    (property "Reference" "U3" (id 0) (at 193.04 110.0898 0))
     (property "Value" "PE4259" (id 1) (at 193.04 112.3885 0))
     (property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6" (id 2) (at 193.04 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.psemi.com/pdf/datasheets/pe4259ds.pdf" (id 3) (at 194.31 119.38 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "UST_ID" "5face19b12875025b3977e15" (id 4) (at 193.04 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "4" (uuid 0c18c864-5614-4e3d-9596-8e181b176d8f))
@@ -3644,11 +3654,20 @@
   )
 
   (symbol_instances
+    (path "/9eb5d852-8ece-4b0a-bdc4-48fcdb78ecfe"
+      (reference "#PWR01") (unit 1) (value "GND") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-0000549d73b2"
       (reference "#PWR02") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000549d770f"
       (reference "#PWR03") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/f27cfdde-84b1-4904-bddc-8bf971fcd1ef"
+      (reference "#PWR04") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/af4624f3-4117-4d8a-94d5-cdea0d50f4be"
+      (reference "#PWR05") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005da75df0"
       (reference "#PWR0101") (unit 1) (value "+5V") (footprint "")
@@ -3728,15 +3747,6 @@
     (path "/00000000-0000-0000-0000-00005db58f1e"
       (reference "#PWR0132") (unit 1) (value "GND") (footprint "")
     )
-    (path "/9eb5d852-8ece-4b0a-bdc4-48fcdb78ecfe"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/af4624f3-4117-4d8a-94d5-cdea0d50f4be"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/f27cfdde-84b1-4904-bddc-8bf971fcd1ef"
-      (reference "#PWR?") (unit 1) (value "+3.3V") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-00005da84b07"
       (reference "C1") (unit 1) (value "-") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
@@ -3788,6 +3798,9 @@
     (path "/00000000-0000-0000-0000-00005dac3b52"
       (reference "C17") (unit 1) (value "39pF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
+    (path "/b327dba9-1654-4985-bb21-01143437b9a3"
+      (reference "C18") (unit 1) (value "1nF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+    )
     (path "/00000000-0000-0000-0000-00005dac3c31"
       (reference "C19") (unit 1) (value "3p3") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
@@ -3802,9 +3815,6 @@
     )
     (path "/00000000-0000-0000-0000-00005da75eb2"
       (reference "C25") (unit 1) (value "10uF") (footprint "Mlab_R:SMD-0805")
-    )
-    (path "/b327dba9-1654-4985-bb21-01143437b9a3"
-      (reference "C?") (unit 1) (value "1nF") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005b4de0b5"
       (reference "D1") (unit 1) (value "BZV55C-5,6V") (footprint "Mlab_D:Diode-MiniMELF_Standard")
@@ -3885,10 +3895,10 @@
       (reference "M4") (unit 1) (value "HOLE") (footprint "Mlab_Mechanical:MountingHole_3mm")
     )
     (path "/00000000-0000-0000-0000-00005da81670"
-      (reference "R1") (unit 1) (value "10k") (footprint "Mlab_R:SMD-0805")
+      (reference "R1") (unit 1) (value "10k") (footprint "Mlab_R:SMD-0603")
     )
     (path "/fd608dde-7b8a-4217-a530-5ef4e2503818"
-      (reference "R?") (unit 1) (value "100R") (footprint "")
+      (reference "R2") (unit 1) (value "100R") (footprint "Mlab_R:SMD-0603")
     )
     (path "/00000000-0000-0000-0000-00005da52347"
       (reference "U1") (unit 1) (value "SX1262") (footprint "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm_ThermalVias")
@@ -3897,7 +3907,7 @@
       (reference "U2") (unit 1) (value "MIC5504-3.3YM5") (footprint "Package_TO_SOT_SMD:SOT-23-5")
     )
     (path "/d5b16bba-6de8-45db-b493-dfea34cb144c"
-      (reference "U?") (unit 1) (value "PE4259") (footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6")
+      (reference "U3") (unit 1) (value "PE4259") (footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6")
     )
     (path "/00000000-0000-0000-0000-00005db3724c"
       (reference "Y1") (unit 1) (value "32MHz") (footprint "Mlab_XTAL:Crystal_SMD_NX2016SA")
