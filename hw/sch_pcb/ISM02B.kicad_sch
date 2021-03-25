@@ -1192,7 +1192,6 @@
     )
   )
 
-
   (junction (at 43.18 93.98) (diameter 1.016) (color 0 0 0 0))
   (junction (at 48.26 83.82) (diameter 1.016) (color 0 0 0 0))
   (junction (at 48.26 91.44) (diameter 1.016) (color 0 0 0 0))
@@ -3549,16 +3548,16 @@
     (property "Reference" "J12" (id 0) (at 259.7912 121.3612 0)
       (effects (font (size 1.524 1.524)) (justify left))
     )
-    (property "Value" "SMA" (id 1) (at 259.7912 124.0536 0)
+    (property "Value" "MCX" (id 1) (at 259.7912 124.0536 0)
       (effects (font (size 1.524 1.524)) (justify left))
     )
-    (property "Footprint" "Mlab_CON:SMA6251A13G50" (id 2) (at 255.27 121.92 0)
+    (property "Footprint" "Mlab_CON:MCX" (id 2) (at 255.27 121.92 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (property "Datasheet" "" (id 3) (at 255.27 121.92 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "UST_ID" "5c70984412875079b91f87ac" (id 4) (at 6.35 208.28 0)
+    (property "UST_ID" "" (id 4) (at 6.35 208.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 175f92ed-6cd8-4569-a403-813265775620))
@@ -3853,7 +3852,7 @@
       (reference "J11") (unit 1) (value "HEADER_2x01_PARALLEL") (footprint "Mlab_Pin_Headers:Straight_2x01")
     )
     (path "/00000000-0000-0000-0000-00005da75a91"
-      (reference "J12") (unit 1) (value "SMA") (footprint "Mlab_CON:SMA6251A13G50")
+      (reference "J12") (unit 1) (value "MCX") (footprint "Mlab_CON:MCX")
     )
     (path "/5f0a40cb-3afe-432c-bba8-05e0afefaf7c"
       (reference "J13") (unit 1) (value "HEADER_2x01_PARALLEL") (footprint "Mlab_Pin_Headers:Straight_2x01")
