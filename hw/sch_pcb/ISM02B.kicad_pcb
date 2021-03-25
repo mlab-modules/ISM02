@@ -1,4 +1,4 @@
-(kicad_pcb (version 20210126) (generator pcbnew)
+(kicad_pcb (version 20210228) (generator pcbnew)
 
   (general
     (thickness 1.6)
@@ -46,6 +46,7 @@
       (copper_finish "None")
       (dielectric_constraints no)
     )
+    (pad_to_mask_clearance 0)
     (pcbplotparams
       (layerselection 0x00010e0_ffffffff)
       (disableapertmacros false)
@@ -625,10 +626,6 @@
     (fp_text value "JUMP_3X2" (at 0 5.08 90) (layer "F.SilkS") hide
       (effects (font (size 1.5 1.5) (thickness 0.15)))
       (tstamp 6b066014-b421-4655-ae98-05bfdca06fd4)
-    )
-    (fp_text user "1" (at -2.921 -2.54 90) (layer "F.SilkS")
-      (effects (font (size 0.5 0.5) (thickness 0.05)))
-      (tstamp 3804f095-fc4e-4461-a615-244b38c43ea1)
     )
     (fp_line (start -2.54 3.81) (end -2.54 -3.81) (layer "F.SilkS") (width 0.15) (tstamp 63a374f9-5e62-4b0e-b720-d1098b63b885))
     (fp_line (start -2.54 -3.81) (end 2.54 -3.81) (layer "F.SilkS") (width 0.15) (tstamp 7d8c51b4-9e03-450a-9ce2-96f23e00db0e))
@@ -2504,7 +2501,7 @@
   (dimension (type aligned) (layer "F.CrtYd") (tstamp 465cfc85-60c3-4c76-a295-c16397779292)
     (pts (xy 134.874 129.286) (xy 185.166 129.286))
     (height 4.064)
-    (gr_text "50,2920 mm" (at 160.02 134.5) (layer "F.CrtYd") (tstamp 465cfc85-60c3-4c76-a295-c16397779292)
+    (gr_text "50,2920 mm" (at 160.02 132.2) (layer "F.CrtYd") (tstamp 465cfc85-60c3-4c76-a295-c16397779292)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (format (units 3) (units_format 1) (precision 4))
@@ -2513,7 +2510,7 @@
   (dimension (type aligned) (layer "F.CrtYd") (tstamp cc5348cc-cd00-4d46-a7b7-04ec97d723ee)
     (pts (xy 185.166 129.286) (xy 185.166 99.314))
     (height 4.445)
-    (gr_text "29,9720 mm" (at 190.761 114.3 90) (layer "F.CrtYd") (tstamp cc5348cc-cd00-4d46-a7b7-04ec97d723ee)
+    (gr_text "29,9720 mm" (at 188.461 114.3 90) (layer "F.CrtYd") (tstamp cc5348cc-cd00-4d46-a7b7-04ec97d723ee)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (format (units 3) (units_format 1) (precision 4))
