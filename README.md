@@ -8,7 +8,7 @@
 <!--- Label --->
 <!--- ELabel --->
 <!--- Name:ISM02A: --->
-# ISM02A
+# ISM02B
 <!--- LongName --->
 ##
 <!--- ELongName --->
@@ -17,9 +17,9 @@
 
 <!--- ELead --->
 
-![ISM02A Top](doc/img/ISM02A_top.png)
+![ISM02B Top](doc/img/ISM02B_top.png)
 
-![ISM02A Bottom](doc/img/ISM02A_bottom.png) 
+![ISM02B Bottom](doc/img/ISM02B_bot.png) 
 
 
 <!--- Description --->
