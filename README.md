@@ -17,6 +17,10 @@
 
 <!--- ELead --->
 
+| Parameter | Value | Description |
+|-----------|-------|-------------|
+|Dimensions: | 50,292 x 29,972 mm | - |
+
 ![ISM02B Top](doc/img/ISM02B_top.png)
 
 ![ISM02B Bottom](doc/img/ISM02B_bot.png) 
