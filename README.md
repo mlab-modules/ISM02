@@ -22,7 +22,8 @@ RF Transceiver module with [SX1262](https://www.semtech.com/products/wireless-rf
   * More features
   * Smaller footprint
   * Less external components
-  * Can use them for the satellite service
+
+The module is usually used as LoRa device. The used circuit contains RF switch to multiplex RX and TX on the single antenna. 
 
 <!--- ELead --->
 
