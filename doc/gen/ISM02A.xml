@@ -2,14 +2,14 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/ISM02A.kicad_sch</source>
-    <date>Thu Feb  2 23:07:38 2023</date>
+    <date>Fri Feb  3 00:16:49 2023</date>
     <tool>Eeschema 6.0.10+dfsg-1~bpo11+1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>ISM02A</title>
         <company>MLAB www.mlab.cz</company>
         <rev/>
-        <date>%F</date>
+        <date>2023-02-03</date>
         <source>ISM02A.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value="ISM RF module with LoRa network capability"/>
