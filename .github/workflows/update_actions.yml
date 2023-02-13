@@ -19,6 +19,7 @@ jobs:
           
       - name: Update submodules
         run: |
+          git submodule sync
           git pull --recurse-submodules
           git submodule update --init --remote doc/assets/
     
