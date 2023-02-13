@@ -19,7 +19,7 @@ jobs:
           
       - name: Update submodules
         run: |
-          git submodule foreach git fetch
+          git pull --recurse-submodules
           git submodule update --init --remote doc/assets/
     
       - name: Zaktualizovat skripty
