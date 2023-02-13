@@ -28,6 +28,7 @@ images:
 - doc/assets/templates/Fritzing/generic-male-header_bread_8.svg
 - doc/assets/templates/Fritzing/src/M3.svg
 mark: 50
+mod_scheme: doc/gen/ISM02B-schematic.pdf
 tags:
 - lora
 - lorawan
