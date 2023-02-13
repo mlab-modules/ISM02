@@ -2,8 +2,8 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/ISM02B.kicad_sch</source>
-    <date>Mon Feb 13 09:52:46 2023</date>
-    <tool>Eeschema 6.0.4-6f826c9f35~116~ubuntu20.04.1</tool>
+    <date>Mon Feb 13 11:49:32 2023</date>
+    <tool>Eeschema 6.0.10+dfsg-1~bpo11+1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>ISM02A</title>
