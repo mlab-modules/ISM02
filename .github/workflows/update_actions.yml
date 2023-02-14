@@ -22,7 +22,8 @@ jobs:
           # git submodule sync
           # git pull --recurse-submodules
           # git submodule update --init --remote doc/assets/
-          git submodule sync --recursive doc/assets
+          git -C doc/assets config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
+          git submodule sync doc/assets
           git submodule update --init --recursive --remote doc/assets
           # git -C public checkout myBranch
     
