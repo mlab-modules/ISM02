@@ -1,9 +1,9 @@
+categories:
+- RF module
 description: ISM RF module with LoRa  network capability
 github_branch: ISM02B
 github_repo: ISM02
 github_url: https://github.com/mlab-modules/ISM02
-categories:
-- RF module
 homepage: true
 images:
 - doc/img/ISM02B_bot.png
