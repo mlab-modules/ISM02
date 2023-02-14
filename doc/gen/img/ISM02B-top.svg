@@ -1860,7 +1860,7 @@
 </g>
 </g> 
 </g><g id="substrate-silk" style="fill:#0b1013; stroke:#0b1013;" mask="url(#pads-mask-silkscreen)"><g style="fill-opacity: 0.0;stroke-width: 3000.000000;stroke-opacity: 1;stroke-linecap: round;stroke-linejoin: round">
-<text x="1478280.000000" y="1090810.000000" textLength="61428.580000" font-size="20000.000000" lengthAdjust="spacingAndGlyphs" text-anchor="middle" opacity="0">IN 5V</text>
+<text x="1478280.000000" y="1090810.000000" textLength="63378.570000" font-size="20000.000000" lengthAdjust="spacingAndGlyphs" text-anchor="middle" opacity="0">IN 5V</text>
 <g class="stroked-text"><desc>IN 5V</desc>
 <path d="M1451137 1090095 L1451137 1075095 "/>
 <path d="M1458280 1090095 L1458280 1075095 L1466851 1090095 L1466851 1075095 "/>
