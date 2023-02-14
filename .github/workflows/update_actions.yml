@@ -18,9 +18,10 @@ jobs:
           
           
       - name: Update submodules
-        run: |
-          git submodule update --remote doc/assets/
-    
+        run: | 
+          git -C doc/assets config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
+          git submodule update --sync --init --remote doc/assets
+          
       - name: Zaktualizovat skripty
         run: |
           cd doc/assets/workflows/ && ./copy_workflow_to_repo.sh && cd ${GITHUB_WORKSPACE}
