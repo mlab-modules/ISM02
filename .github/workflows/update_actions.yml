@@ -19,9 +19,12 @@ jobs:
           
       - name: Update submodules
         run: |
-          git submodule sync
-          git pull --recurse-submodules
-          git submodule update --init --remote doc/assets/
+          # git submodule sync
+          # git pull --recurse-submodules
+          # git submodule update --init --remote doc/assets/
+          git submodule sync --recursive doc/assets
+          git submodule update --init --recursive --remote doc/assets
+          # git -C public checkout myBranch
     
       - name: Zaktualizovat skripty
         run: |
