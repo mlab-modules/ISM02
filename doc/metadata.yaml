@@ -8,15 +8,16 @@ homepage: true
 images:
 - doc/img/ISM02B_top.png
 - doc/img/ISM02B_bot.png
-- doc/gen/img/ISM02B-bottom.png
-- doc/gen/img/ISM02B-top.png
-- doc/gen/ISM02B-schematic.svg
-- doc/gen/img/ISM02B-top.svg
-- hw/cam_profi/docs/ISM02B-assembly_page_01.svg
-- hw/cam_profi/docs/ISM02B-assembly_page_02.svg
+- doc/gen/img/ISM02-bottom.png
+- doc/gen/img/ISM02-top.png
+- doc/gen/ISM02-schematic.svg
+- doc/gen/img/ISM02-bottom.svg
+- doc/gen/img/ISM02-top.svg
+- hw/cam_profi/assembly/ISM02-assembly_page_02.svg
+- hw/cam_profi/assembly/ISM02-assembly_page_01.svg
 mark: 50
-mod_ibom: hw/cam_profi/ibom/ISM02B-ibom.html
-mod_scheme: doc/gen/ISM02B-schematic.pdf
+mod_ibom: hw/cam_profi/ISM02-ibom.html
+mod_scheme: doc/gen/ISM02-schematic.pdf
 tags:
 - lora
 - lorawan
@@ -31,4 +32,4 @@ tags:
 - mlab-kicad
 - pcb
 title: ISM02
-updated: '2023-07-20T08:55:49.665067+00:00'
+updated: '2023-07-20T09:01:32.079535+00:00'
