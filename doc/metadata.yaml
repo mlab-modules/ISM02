@@ -6,8 +6,14 @@ github_repo: ISM02
 github_url: https://github.com/mlab-modules/ISM02
 homepage: true
 images:
-- doc/img/ISM02B_bot.png
 - doc/img/ISM02B_top.png
+- doc/img/ISM02B_bot.png
+- doc/gen/img/ISM02B-bottom.png
+- doc/gen/img/ISM02B-top.png
+- doc/gen/ISM02B-schematic.svg
+- doc/gen/img/ISM02B-top.svg
+- hw/cam_profi/docs/ISM02B-assembly_page_01.svg
+- hw/cam_profi/docs/ISM02B-assembly_page_02.svg
 mark: 50
 mod_ibom: hw/cam_profi/ibom/ISM02B-ibom.html
 mod_scheme: doc/gen/ISM02B-schematic.pdf
@@ -17,4 +23,12 @@ tags:
 - lorawan-device
 - iot-platform
 - iot
+- mlab
+- mlab-module
+- kicad
+- kicad-pcb
+- kicad-project
+- mlab-kicad
+- pcb
 title: ISM02
+updated: '2023-07-20T08:55:49.665067+00:00'
