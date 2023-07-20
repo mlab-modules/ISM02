@@ -1,5 +1,3 @@
-categories:
-- RF module
 description: ISM RF module with LoRa  network capability
 github_branch: ISM02B
 github_repo: ISM02
