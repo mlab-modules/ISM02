@@ -5,10 +5,10 @@ github_url: https://github.com/mlab-modules/ISM02
 homepage: true
 image_title: doc/gen/img/ISM02-top.png
 images:
-- doc/img/ISM02B_top.png
-- doc/img/ISM02B_bot.png
-- doc/gen/img/ISM02-bottom.png
 - doc/gen/img/ISM02-top.png
+- doc/gen/img/ISM02-bottom.png
+- doc/img/ISM02B_bot.png
+- doc/img/ISM02B_top.png
 - doc/gen/ISM02-schematic.svg
 - doc/gen/img/ISM02-bottom.svg
 - doc/gen/img/ISM02-top.svg
@@ -31,4 +31,4 @@ tags:
 - mlab-kicad
 - pcb
 title: ISM02
-updated: '2023-07-21T03:42:51.411267+00:00'
+updated: '2023-09-11T00:54:37.397980+00:00'
