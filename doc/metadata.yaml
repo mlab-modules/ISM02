@@ -17,7 +17,7 @@ images:
 mark: 50
 mod_ibom: hw/cam_profi/ISM02-ibom.html
 mod_scheme: doc/gen/ISM02-schematic.pdf
-status: 0
+status: 2
 tags:
 - lora
 - lorawan
