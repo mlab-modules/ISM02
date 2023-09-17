@@ -1,5 +1,6 @@
 description: ISM RF module with LoRa  network capability
 github_branch: ISM02B
+github_description: ISM RF module with LoRa  network capability
 github_repo: ISM02
 github_url: https://github.com/mlab-modules/ISM02
 homepage: true
@@ -32,4 +33,4 @@ tags:
 - mlab-kicad
 - pcb
 title: ISM02
-updated: '2023-09-16T22:01:32.474954+00:00'
+updated: '2023-09-17T11:41:17.671517+00:00'
