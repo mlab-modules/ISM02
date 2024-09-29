@@ -25,11 +25,10 @@ ISM02A is a telemetry module based on the Semtech SX1262 RF transceiver. This mo
 The module is typically used as a LoRa device and offers flexible wireless communication for various low-power, long-range applications.
 
 ## Applications
-- Smart meters
+- Remote sensors
 - Agricultural sensors
-- Asset tracking
-- Smart cities
-- Remote control applications
+- HAB/stratospheric balloon tracking and telemetry
+- Remote control applications (UAVs, Robots)
 
 ## Specifications
 
