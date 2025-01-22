@@ -6,15 +6,15 @@ github_url: https://github.com/mlab-modules/ISM02
 homepage: true
 image_title: doc/gen/img/ISM02-top.png
 images:
+- doc/img/ISM02B_bot.png
+- doc/img/ISM02B_top.png
 - doc/gen/img/ISM02-bottom.png
 - doc/gen/img/ISM02-top.png
-- doc/img/ISM02B_top.png
-- doc/img/ISM02B_bot.png
-- doc/gen/ISM02-schematic.svg
-- doc/gen/img/ISM02-top.svg
-- doc/gen/img/ISM02-bottom.svg
-- hw/cam_profi/assembly/ISM02-assembly_page_02.svg
 - hw/cam_profi/assembly/ISM02-assembly_page_01.svg
+- hw/cam_profi/assembly/ISM02-assembly_page_02.svg
+- doc/gen/ISM02-schematic.svg
+- doc/gen/img/ISM02-bottom.svg
+- doc/gen/img/ISM02-top.svg
 mark: 50
 mod_ibom: hw/cam_profi/ISM02-ibom.html
 mod_scheme: doc/gen/ISM02-schematic.pdf
@@ -33,4 +33,4 @@ tags:
 - mlab-kicad
 - pcb
 title: ISM02
-updated: '2024-09-29T11:22:40.963795+00:00'
+updated: '2025-01-22T21:23:36.747986+00:00'
