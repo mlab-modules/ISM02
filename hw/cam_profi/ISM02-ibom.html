@@ -618,6 +618,7 @@ mark.highlight {
   width: 100%;
   background-color: white;
   transition: background-color 0.3s;
+  min-height: 100%;
 }
 
 #top {
@@ -1426,6 +1427,8 @@ function overwriteSettings(newSettings) {
   document.getElementById("dnpOutlineCheckbox").checked = settings.renderDnpOutline;
   setRedrawOnDrag(settings.redrawOnDrag);
   document.getElementById("dragCheckbox").checked = settings.redrawOnDrag;
+  setHighlightRowOnClick(settings.highlightRowOnClick);
+  document.getElementById("highlightRowOnClickCheckbox").checked = settings.highlightRowOnClick;
   setDarkMode(settings.darkMode);
   document.getElementById("darkmodeCheckbox").checked = settings.darkMode;
   setHighlightPin1(settings.highlightpin1);
@@ -1550,6 +1553,7 @@ function initDefaults() {
   }
   initBooleanSetting("dnpOutline", false, "dnpOutlineCheckbox", dnpOutline);
   initBooleanSetting("redrawOnDrag", config.redraw_on_drag, "dragCheckbox", setRedrawOnDrag);
+  initBooleanSetting("highlightRowOnClick", false, "highlightRowOnClickCheckbox", setHighlightRowOnClick);
   initBooleanSetting("darkmode", config.dark_mode, "darkmodeCheckbox", setDarkMode);
 
   var fields = ["checkboxes", "References"].concat(config.fields).concat(["Quantity"]);
@@ -3206,6 +3210,14 @@ function setHighlightPin1(value) {
   redrawIfInitDone();
 }
 
+function setHighlightRowOnClick(value) {
+  settings.highlightRowOnClick = value;
+  writeStorage("highlightRowOnClick", value);
+  if (initDone) {
+    populateBomTable();
+  }
+}
+
 function getStoredCheckboxRefs(checkbox) {
   function convert(ref) {
     var intref = parseInt(ref);
@@ -3257,15 +3269,15 @@ function setBomCheckboxState(checkbox, element, references) {
   element.indeterminate = (state == "indeterminate");
 }
 
-function createCheckboxChangeHandler(checkbox, references, row) {
-  return function () {
+function createCheckboxHandlers(input, checkbox, references, row) {
+  var clickHandler = () => {
     refsSet = getStoredCheckboxRefs(checkbox);
     var markWhenChecked = settings.markWhenChecked == checkbox;
     eventArgs = {
       checkbox: checkbox,
       refs: references,
     }
-    if (this.checked) {
+    if (input.checked) {
       // checkbox ticked
       for (var ref of references) {
         refsSet.add(ref[1]);
@@ -3297,6 +3309,22 @@ function createCheckboxChangeHandler(checkbox, references, row) {
     updateCheckboxStats(checkbox);
     EventHandler.emitEvent(IBOM_EVENT_TYPES.CHECKBOX_CHANGE_EVENT, eventArgs);
   }
+
+  return [
+    (e) => {
+      clickHandler();
+    },
+    (e) => {
+      e.preventDefault();
+      if (row.onmousemove) row.onmousemove();
+    },
+    (e) => {
+      e.preventDefault();
+      input.checked = !input.checked;
+      input.indeterminate = false;
+      clickHandler();
+    }
+  ];
 }
 
 function clearHighlightedFootprints() {
@@ -3752,7 +3780,7 @@ function populateBomBody(placeholderColumn = null, placeHolderElements = null) {
               td = document.createElement("TD");
               var input = document.createElement("input");
               input.type = "checkbox";
-              input.onchange = createCheckboxChangeHandler(checkbox, references, tr);
+              [input.onchange, td.ontouchstart, td.ontouchend] = createCheckboxHandlers(input, checkbox, references, tr);
               setBomCheckboxState(checkbox, input, references);
               if (input.checked && settings.markWhenChecked == checkbox) {
                 tr.classList.add("checked");
@@ -3794,7 +3822,11 @@ function populateBomBody(placeholderColumn = null, placeHolderElements = null) {
     }
     bom.appendChild(tr);
     var handler = createRowHighlightHandler(tr.id, references, netname);
-    tr.onmousemove = handler;
+    if (settings.highlightRowOnClick) {
+      tr.onmousedown = handler;
+    } else {
+      tr.onmousemove = handler;
+    }
     highlightHandlers.push({
       id: tr.id,
       handler: handler,
@@ -4108,7 +4140,8 @@ function toggleBomCheckbox(bomrowid, checkboxnum) {
     return;
   }
   var bomrow = document.getElementById(bomrowid);
-  var checkbox = bomrow.childNodes[checkboxnum].childNodes[0];
+  var childNum = checkboxnum + settings.columnOrder.indexOf("checkboxes");
+  var checkbox = bomrow.childNodes[childNum].childNodes[0];
   checkbox.checked = !checkbox.checked;
   checkbox.indeterminate = false;
   checkbox.onchange();
@@ -4124,7 +4157,8 @@ function checkBomCheckbox(bomrowid, checkboxname) {
     return;
   }
   var bomrow = document.getElementById(bomrowid);
-  var checkbox = bomrow.childNodes[checkboxnum + 1].childNodes[0];
+  var childNum = checkboxnum + 1 + settings.columnOrder.indexOf("checkboxes");
+  var checkbox = bomrow.childNodes[childNum].childNodes[0];
   checkbox.checked = true;
   checkbox.indeterminate = false;
   checkbox.onchange();
@@ -4445,6 +4479,10 @@ window.matchMedia("print").addListener(resizeAll);
           --><label class="menu-label" style="width: calc(50% - 17px); border-left: 0;">
             <input id="dnpOutlineCheckbox" type="checkbox" checked onchange="dnpOutline(this.checked)">
             DNP outlined
+          </label>
+          <label class="menu-label">
+            <input id="highlightRowOnClickCheckbox" type="checkbox" checked onchange="setHighlightRowOnClick(this.checked)">
+            Highlight row on click
           </label>
           <label class="menu-label">
             <input id="dragCheckbox" type="checkbox" checked onchange="setRedrawOnDrag(this.checked)">
